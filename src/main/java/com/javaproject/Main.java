@@ -17,7 +17,9 @@ public class Main {
         System.out.print("Enter Day:");
         day = scanner.nextInt();
         System.out.println("");
+        
         LocalDate localDate = LocalDate.of(year,month, day);
         System.out.println("Your age is: " + AgeCalculator.calculateAge(localDate));
+        System.out.println("You live around: " + AgeCalculator.calculateAgeDays(localDate) + " Days \n");
     }
 }
